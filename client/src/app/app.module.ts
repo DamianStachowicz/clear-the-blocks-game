@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { TankComponent } from './components/tank/tank.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TankComponent
   ],
   imports: [
     BrowserModule

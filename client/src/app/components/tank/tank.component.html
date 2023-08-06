@@ -1,0 +1,16 @@
+<div
+  class="tank"
+  [ngStyle]="{
+    'border-color': getGridBorderColor(),
+    'background-color': getGridColor(),
+    'width': getGridWidth() * 31 + 'px',
+  }"
+>
+  <div *ngFor="let row of getGrid(); index as rIndex" class="row">
+    <div
+      *ngFor="let cell of row; index as cIndex"
+      class="cell"
+      [ngStyle]="{ 'background-color': getGrid()[rIndex][cIndex] }"
+    ></div>
+  </div>
+</div>
